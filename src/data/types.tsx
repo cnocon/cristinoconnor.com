@@ -6,9 +6,9 @@ export type Skill = {
   icon: IconType
 }
 
-export type Honor = {
+export type HonorType = {
   name: string,
-  date: string
+  detail: string
 }
 
 export type Job = {
@@ -21,7 +21,7 @@ export type Job = {
   end: string,
   description: string[],
   technologies: string[],
-  honors: Honor[]
+  honors: HonorType[]
 }
 
 export type ResumeData = {
@@ -32,4 +32,14 @@ export type ResumeData = {
 
 export type Data = {
   resume: ResumeData
+}
+
+export type EducationType = {
+  school: string,
+  title: string,
+  schoolUrl: string,
+  location: string,
+  honors: HonorType[],
+  start: string,
+  end: string
 }

@@ -4,11 +4,8 @@ import {Company, Honor, Honors, Description, Descriptions, Timespan, Technologie
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 // import { BsTrophy } from "react-icons/bs";
 import { FaAward } from "react-icons/fa";
+import { HonorType } from "../../data/types"
 
-type HonorType = {
-  name: string,
-  date: string
-}
 export const Job = ({
   title,
   // year,
@@ -52,7 +49,7 @@ export const Job = ({
         </Descriptions>
         {!!honors?.length && (
           <Honors>
-            {honors.map((honor, index) => <Honor key={`${index}-tech-for-${company}`}><FaAward /> <div><b>{honor.name}</b><span>{honor.date}</span></div></Honor>)}
+            {honors.map((honor, index) => <Honor key={`${index}-tech-for-${company}`}><FaAward /> <div><b>{honor.name}</b><span>{honor?.detail}</span></div></Honor>)}
           </Honors>
         )}
         <Technologies>

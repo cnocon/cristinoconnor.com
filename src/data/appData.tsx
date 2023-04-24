@@ -119,7 +119,7 @@ const data = {
       companyUrl: "https://www.vivint.com/",
       description: [ "Coded the front end for multiple JavaScript-based sales applications, leveraging technologies including Vue.js, Typescript, LESS, and Ember.js", "Spearheaded the creation of new documentation and code quality standards for front end development in sales", "Provided full stack on-call support for emergencies, leveraging logs and data from Splunk, Dynatrace, and AppDynamics to quickly identify and fix critical bugs under pressure (in a 24/7 rotation for a week each month)", "Created a new onboarding process for front end and full stack engineers in sales (for current employees and new hires) that aimed to reduce sales’ isolation from the company’s broader front end initiatives and practices" ],
       technologies: [ "Ember", "Vue", "LESS", "TypeScript" ],
-      honors: [ { name: "Innovation Week Presenter", date: "Nov 2021" } ]
+      honors: [ { name: "Innovation Week Presenter", detail: "Nov 2021" } ]
     },
     {
       year: "2020-21",
@@ -131,7 +131,7 @@ const data = {
       companyUrl: "https://www.clearlink.com/",
       description: [ "Used mockups to code responsive websites using Handlebars, SCSS, JavaScript, and a proprietary component library", "Assisted in maintaining and extending applications using JavaScript", "Mentored and supported junior developers", "Extended functionality of component library core package", "Supported a broad range of browsers and devices with a focus on accessibility" ],
       technologies: [ "JavaScript", "PHP", "React", "Gatsby" ],
-      honors: [ { name: "Frontend Project Showcase Winner", date: "July 2020" }, { name: "Frontend Project Showcase Winner", date: "Oct 2020" } ]
+      honors: [ { name: "Frontend Project Showcase Winner", detail: "July 2020" }, { name: "Frontend Project Showcase Winner", detail: "Oct 2020" } ]
     },
     {
       year: "2018-19",

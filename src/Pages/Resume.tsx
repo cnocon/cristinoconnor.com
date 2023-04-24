@@ -5,7 +5,8 @@ import { Job } from "../components/Job/Job";
 import Layout from "../Layout"
 import { Skill as SkillType } from "../data/types";
 import { Skill } from "../components/Skill/Skill";
-
+import { Education } from "../components/Education/Education"
+import { EducationType } from "../data/types";
 export const Resume = () => {
   const loaderData: any = useLoaderData();
   const [data, setData] = React.useState(loaderData);
@@ -31,6 +32,8 @@ export const Resume = () => {
           {data && data?.resume && data.resume?.technicalSkills?.map((skill: SkillType) => {
             return <Skill key={`${skill.label}-job`} {...skill} />
           })}
+
+          {data && data?.resume && data.resume?.education?.map((edu: EducationType) => <Education key={edu.school} {...edu} />)}
           </div>
           {/* <div className="card text-bg-dark mb-3" style={{maxWidth: `18rem`}}>
             <div className="card-header">Header</div>

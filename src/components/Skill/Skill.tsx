@@ -57,9 +57,8 @@ export const Skill = (props: SkillType) => {
         role="progressbar"
         aria-label={label}
       >
-
         <ProgressBar
-          className="progress-bar text-dark fw-bolder"
+          className="progress-bar"
           style={{width: `${percentage}%`}}
         />
     </Progress>
