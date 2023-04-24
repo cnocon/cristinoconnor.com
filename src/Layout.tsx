@@ -4,7 +4,7 @@ import { StyledLayout } from "./StyledLayout";
  const Layout = ({ children }: {children: ReactNode}): React.ReactElement => {
   return (
     <StyledLayout>
-      <div className="header wrapper-outer bg-light">
+      <div className="header wrapper-outer bg-dark">
         <header className="wrapper-inner">
           <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
@@ -15,10 +15,10 @@ import { StyledLayout } from "./StyledLayout";
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link text-dark" aria-current="page" href="/">Home</a>
+                  <a className="nav-link text-light" aria-current="page" href="/">Home</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-dark" href="/resume">Resume</a>
+                  <a className="nav-link text-light" href="/resume">Resume</a>
                 </li>
               </ul>
             </div>

@@ -3,6 +3,8 @@ import { Skill as SkillType} from "../../data/types"
 import styled from "styled-components";
 
 const Label = styled.div`
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   margin: 1rem 0 0.25rem;
@@ -16,32 +18,50 @@ const Label = styled.div`
 `
 
 const ProgressBar = styled.div`
-  height: 10px;
+  vertical-align: middle;
+  font-family: Oswald, Impact, serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 6px;
+  width: 100%;
   background-image: linear-gradient(-240deg,#bca2f6,#cdb9f8 5%,#b3e9ff 17%,#b3e9ff 25%,#bffcf7 35%,#ffe366 60%,#fad1d1 85%);
 `
 
 const Progress = styled.div`
-  height: 10px;
+  height: 6px;
+`
+
+const Percentage = styled.div`
+  position: absolute;
+  height: 6px;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 2;
+  width: 36px;
+  height: 26px;
+  font-weight: 600;
+  padding: 2px 4px;
+  font-size: 14px;
+  font-family: Lato, Verdana, sans-serif;
 `
 
 export const Skill = (props: SkillType) => {
   const { label, percentage, icon } = props;
   return (
     <>
-    <Label className="text-dark">{icon({className: "text-secondary"})} {label}</Label>
-    <Progress
-      className="progress"
-      role="progressbar"
-      aria-label={label}
-      style={{height: "10px"}}
-    >
-      <ProgressBar
-        className="progress-bar"
-        style={{width: `${percentage}%`}}
+      <Label className="text-dark">{icon({className: "text-primary"})} {label} <Percentage className="bg-dark text-light">{percentage}%</Percentage></Label>
+      <Progress
+        className="progress"
+        role="progressbar"
+        aria-label={label}
       >
-        {percentage}%
-      </ProgressBar>
-  </Progress>
+
+        <ProgressBar
+          className="progress-bar text-dark fw-bolder"
+          style={{width: `${percentage}%`}}
+        />
+    </Progress>
   </>
   )
 }
