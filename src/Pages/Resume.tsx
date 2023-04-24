@@ -27,14 +27,14 @@ export const Resume = () => {
           })}
         </div>
         <div className="col col-6">
-          <div className="card py-2 text-bg-light mb-3 pb-4">
+          <div className="card mb-4">
             <div className="card-body">
               {data && data?.resume && data.resume?.technicalSkills?.map((skill: SkillType) => {
                 return <Skill key={`${skill.label}-job`} {...skill} />
               })}
             </div>
           </div>
-          <div className="card py-2 text-bg-light mb-3 pb-4">
+          <div className="card my-4">
             <div className="card-body">
               {data && data?.resume && data.resume?.education?.map((edu: EducationType) => <Education key={edu.school} {...edu} />)}
             </div>

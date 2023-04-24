@@ -33,16 +33,14 @@ export const Job = ({
   const startDate = dayjs(start).format("MMM YYYY")
 
   return (
-    <StyledJob className="job card py-2 text-bg-dark mb-3">
-      <div className="card-header">
-        <header>
-          <JobTitle key={`job-${company}`}>{title}</JobTitle>
-          <Company>
-            <a href={companyUrl} target="_blank" rel="nofollow noreferrer">{company}</a> <HiOutlineChevronDoubleRight /> <Location>{location}</Location>
-          </Company>
-          <Timespan>{startDate} &mdash; {endDate}</Timespan>
-        </header>
-      </div>
+    <StyledJob className="job card py-3 px-2">
+      <header className="card-header bg-white border-bottom-0">
+        <JobTitle key={`job-${company}`}>{title}</JobTitle>
+        <Company>
+          <a href={companyUrl} target="_blank" rel="nofollow noreferrer">{company}</a> <HiOutlineChevronDoubleRight /> <Location>{location}</Location>
+        </Company>
+        <Timespan>{startDate} &mdash; {endDate}</Timespan>
+      </header>
       <div className="card-body pt-0">
         <Descriptions>
           {description.map((desc, index) => <Description key={`${index}-desc-for-${company}`}>{desc}</Description>)}
@@ -53,7 +51,7 @@ export const Job = ({
           </Honors>
         )}
         <Technologies>
-          {technologies.map((tech, index) => <Technology key={`${index}-tech-for-${company}`}><span className="badge  text-light"><span className="hashtag">#</span>{tech}</span></Technology>)}
+          {technologies.map((tech, index) => <Technology key={`${index}-tech-for-${company}`}><span className="badge text-dark"><span className="hashtag">#</span>{tech}</span></Technology>)}
         </Technologies>
       </div>
     </StyledJob>

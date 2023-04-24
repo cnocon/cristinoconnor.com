@@ -19,8 +19,8 @@ const data = {
         school: "University of Notre Dame",
         schoolUrl: "https://nd.edu",
         location: "Notre Dame, IN",
-        start: "2006",
-        end: "2011",
+        start: "08/01/2006",
+        end: "05/01/2011",
         honors: [
           {
             name: "Summa Cum Laude",

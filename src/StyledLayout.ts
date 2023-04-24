@@ -19,11 +19,11 @@ export const StyledLayout = styled.div`
     color: transparent;
     position: relative;
     z-index: 10;
-    background-color: #345;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: radial-gradient(ellipse at bottom right,#b698f5 30%,#66d4ff 40%,#5df8eb 50%,#ffec99 60%,#f28c8c 75%);
+    // color: hsl(261, 51%, 51%);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-image: radial-gradient(ellipse at bottom right,#b698f5 30%,#66d4ff 40%,#5df8eb 50%,#ffec99 60%,#f28c8c 75%);
   }
 `

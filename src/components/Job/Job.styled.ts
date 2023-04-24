@@ -50,11 +50,11 @@ export const Technology = styled.li`
   margin-right: 0.25rem;
   font-family: Lato, Verdana, sans-serif;
   font-size: 1.25rem;
-  text-transform: lowercase;
+
   .hashtag {
     color: #ffc107;
     font-weight: 600;
-    margin-right: 1px;
+    margin-right: 2px;
   }
 `
 export const Timespan = styled.h5`
