@@ -66,8 +66,8 @@ export const Timespan = styled.h5`
 export const Descriptions = styled.ul`
   font-weight: 500;
   font-family: Lato, Verdana, sans-serif;
-  // margin: 1rem 0 0;
-  // padding: 0 0 0 1rem;
+  margin: 0;
+  padding: 0 0 0 2rem;
   list-style-type: disc;
 `
 
@@ -75,6 +75,8 @@ export const Description = styled.li`
   font-size: 1rem;
   margin-bottom: 0.5rem;
   line-height: 1.5em;
+  margin-top: 0;
+  padding: 0;
 
   &:last-child {
     margin-bottom: 1rem;

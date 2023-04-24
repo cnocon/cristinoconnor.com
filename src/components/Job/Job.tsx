@@ -43,7 +43,7 @@ export const Job = ({
           <Timespan>{startDate} &mdash; {endDate}</Timespan>
         </header>
       </div>
-      <div className="card-body">
+      <div className="card-body pt-0">
         <Descriptions>
           {description.map((desc, index) => <Description key={`${index}-desc-for-${company}`}>{desc}</Description>)}
         </Descriptions>
