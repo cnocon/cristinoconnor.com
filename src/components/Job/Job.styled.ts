@@ -15,6 +15,7 @@ export const Job = styled.article`
 
   h4 {
     font-size: 1.25rem;
+    font-family: Lato, Verdana, sans-serif;
   }
 
   svg {
@@ -30,22 +31,90 @@ export const Job = styled.article`
 export const Location = styled.span`
   font-weight: 400;
   font-style: italic;
+  font-family: Lato, Verdana, sans-serif;
 `
 
 export const JobYear = styled.div`
-  display: block
-  background: #345
-  height: 60px
-  width: 60px
-  border - radius: 50 %
-  display: flex
-  align - items: center
-  justify - content: center;
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Lato, Verdana, sans-serif;
+  background-color: $primary-bg-subtle;
 
   b {
-    color: #fff
     font - size: 12px
     line - height: 1.25em
   }
+}
 `
 
+export const Technologies = styled.ul`
+  padding: 0;
+  margin: 1.5rem 0 1rem;
+
+  li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-family: Lato, Verdana, sans-serif;
+  }
+`
+
+export const Timespan = styled.h5`
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: Lato, Verdana, sans-serif;
+`
+
+export const Descriptions = styled.ul`
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Lato, Verdana, sans-serif;
+  margin: 1rem 0;
+  padding: 0 0 0 2rem;
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+`
+
+export const Honors = styled.ul`
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.25em;
+    padding: 0 0 1rem;
+    font-size: 12px;
+  }
+
+  svg {
+    color: #ffc107;
+    font-size: 24px;
+    margin-right: 0.5rem;
+    font-weight: 400;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div b,
+  div span {
+    flex-basis: 90%;
+  }
+
+
+`

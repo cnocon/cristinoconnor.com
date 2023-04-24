@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import data from "./data/appData";
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import { Resume } from "./Pages/Resume"
 import { Home } from "./Pages/Home"
-import './custom.scss';
 
 const router = createBrowserRouter([
   {
