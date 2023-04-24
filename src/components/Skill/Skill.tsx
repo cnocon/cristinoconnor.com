@@ -33,7 +33,6 @@ const Progress = styled.div`
 
 const Percentage = styled.div`
   position: absolute;
-  height: 6px;
   right: 0;
   top: 0;
   display: block;
@@ -44,13 +43,15 @@ const Percentage = styled.div`
   padding: 2px 4px;
   font-size: 14px;
   font-family: Lato, Verdana, sans-serif;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 `
 
 export const Skill = (props: SkillType) => {
   const { label, percentage, icon } = props;
   return (
-    <>
-      <Label className="text-dark">{icon({className: "text-primary"})} {label} <Percentage className="bg-dark text-light">{percentage}%</Percentage></Label>
+    <div className="px-4">
+      <Label className="text-dark">{icon({className: "text-dark"})} {label} <Percentage className="bg-dark text-light rounded">{percentage}%</Percentage></Label>
       <Progress
         className="progress"
         role="progressbar"
@@ -62,7 +63,7 @@ export const Skill = (props: SkillType) => {
           style={{width: `${percentage}%`}}
         />
     </Progress>
-  </>
+  </div>
   )
 }
 

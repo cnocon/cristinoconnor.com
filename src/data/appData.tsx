@@ -13,6 +13,30 @@ export type Skill = {
 }
 const data = {
   resume: {
+    education: [
+      {
+        title: "B.A. Sociology, Computer Applications",
+        school: "University of Notre Dame",
+        schoolUrl: "https://nd.edu",
+        location: "Notre Dame, IN",
+        start: "2006",
+        end: "2011",
+        honors: [
+          {
+            name: "Summa Cum Laude",
+            detail: "College of Arts and Letters",
+          },
+          {
+            name: "Phi Beta Kappa",
+            detail: "They made me pay a fee...",
+          },
+          {
+            name: "Alpha Kappa Delta",
+            detail: "International Sociology Honor Society",
+          },
+        ]
+      }
+    ],
     technicalSkills: [
       {
         label: "JavaScript",
@@ -107,7 +131,7 @@ const data = {
       companyUrl: "https://www.clearlink.com/",
       description: [ "Used mockups to code responsive websites using Handlebars, SCSS, JavaScript, and a proprietary component library", "Assisted in maintaining and extending applications using JavaScript", "Mentored and supported junior developers", "Extended functionality of component library core package", "Supported a broad range of browsers and devices with a focus on accessibility" ],
       technologies: [ "JavaScript", "PHP", "React", "Gatsby" ],
-      honors: [ { name: "F.E.D. Project Showcase Winner", date: "July 2020" }, { name: "F.E.D. Project Showcase Winner", date: "Oct 2020" } ]
+      honors: [ { name: "Frontend Project Showcase Winner", date: "July 2020" }, { name: "Frontend Project Showcase Winner", date: "Oct 2020" } ]
     },
     {
       year: "2018-19",

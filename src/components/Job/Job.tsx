@@ -1,10 +1,11 @@
 import React from "react";
 import dayjs from "dayjs";
-import {Honors, Descriptions, Timespan, Technologies, Job as StyledJob, /*JobYear,*/ Location } from "./Job.styled";
+import {Company, Honor, Honors, Description, Descriptions, Timespan, Technologies, Technology, Job as StyledJob, /*JobYear,*/ Location, JobTitle } from "./Job.styled";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
-import { BsTrophy } from "react-icons/bs";
+// import { BsTrophy } from "react-icons/bs";
+import { FaAward } from "react-icons/fa";
 
-type Honor = {
+type HonorType = {
   name: string,
   date: string
 }
@@ -28,31 +29,36 @@ export const Job = ({
   description: string[],
   start: string,
   end: string,
-  honors: Honor[],
+  honors: HonorType[],
   technologies: string[]
 }) => {
   const endDate = end === "Present" ? "Present" : dayjs(end).format("MMM YYYY");
   const startDate = dayjs(start).format("MMM YYYY")
 
   return (
-    <StyledJob className="job border border-3 rounded">
-      <header>
-        {/* <JobYear>{year}</JobYear> */}
-        <h3 key={`job-${company}`}>{title}</h3>
-        <h4><a href={companyUrl} target="_blank" rel="nofollow noreferrer">{company}</a> <HiOutlineChevronDoubleRight /> <Location>{location}</Location></h4>
-        <Timespan>{startDate} – {endDate}</Timespan>
-      </header>
-      <Descriptions>
-        {description.map((desc, index) => <li key={`${index}-desc-for-${company}`}>{desc}</li>)}
-      </Descriptions>
-      {honors && (
-        <Honors>
-          {honors.map((honor, index) => <li key={`${index}-tech-for-${company}`}><BsTrophy /> <div><b>{honor.name}</b><span>{honor.date}</span></div></li>)}
-        </Honors>
-      )}
-      <Technologies>
-        {technologies.map((tech, index) => <li key={`${index}-tech-for-${company}`}><span className="badge bg-dark text-light">{tech}</span></li>)}
-      </Technologies>
+    <StyledJob className="job card py-2 text-bg-dark mb-3">
+      <div className="card-header">
+        <header>
+          <JobTitle key={`job-${company}`}>{title}</JobTitle>
+          <Company>
+            <a href={companyUrl} target="_blank" rel="nofollow noreferrer">{company}</a> <HiOutlineChevronDoubleRight /> <Location>{location}</Location>
+          </Company>
+          <Timespan>{startDate} &mdash; {endDate}</Timespan>
+        </header>
+      </div>
+      <div className="card-body">
+        <Descriptions>
+          {description.map((desc, index) => <Description key={`${index}-desc-for-${company}`}>{desc}</Description>)}
+        </Descriptions>
+        {!!honors?.length && (
+          <Honors>
+            {honors.map((honor, index) => <Honor key={`${index}-tech-for-${company}`}><FaAward /> <div><b>{honor.name}</b><span>{honor.date}</span></div></Honor>)}
+          </Honors>
+        )}
+        <Technologies>
+          {technologies.map((tech, index) => <Technology key={`${index}-tech-for-${company}`}><span className="badge  text-light"><span className="hashtag">#</span>{tech}</span></Technology>)}
+        </Technologies>
+      </div>
     </StyledJob>
   )
 }

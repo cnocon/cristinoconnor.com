@@ -20,15 +20,26 @@ export const Resume = () => {
   return (
     <Layout>
       <div className="row">
-        <div className="col col-7">
+        <div className="col col-6">
           {data && data?.resume && data.resume?.workHistory?.map((job: JobType) => {
             return <Job key={`${job.company}-job`} {...job} />
           })}
         </div>
-        <div className="col col-5">
+        <div className="col col-6">
+          <div className="job card py-2 text-bg-light mb-3 pb-4">
+            <div className="card-body">
           {data && data?.resume && data.resume?.technicalSkills?.map((skill: SkillType) => {
             return <Skill key={`${skill.label}-job`} {...skill} />
           })}
+          </div>
+          {/* <div className="card text-bg-dark mb-3" style={{maxWidth: `18rem`}}>
+            <div className="card-header">Header</div>
+            <div className="card-body">
+              <h5 className="card-title">Dark card title</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div> */}
+        </div>
         </div>
       </div>
     </Layout>
