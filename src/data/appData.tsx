@@ -5,7 +5,12 @@ import { BsFillPersonCheckFill, BsGit } from "react-icons/bs"
 import { SiTypescript } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 import { BiTestTube } from "react-icons/bi"
-
+import { ReactNode } from "react"
+export type Skill = {
+  label: string,
+  percentage: string,
+  icon: ReactNode
+}
 const data = {
   resume: {
     technicalSkills: [

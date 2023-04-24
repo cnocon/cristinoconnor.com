@@ -25,7 +25,7 @@ export const Job = styled.article`
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px dotted #000;
+    border-bottom: 2px solid #ffc107;
   }
 `
 export const Location = styled.span`
@@ -43,11 +43,15 @@ export const JobYear = styled.div`
   align-items: center;
   justify-content: center;
   font-family: Lato, Verdana, sans-serif;
-  background-color: $primary-bg-subtle;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 1rem;
 
   b {
-    font - size: 12px
-    line - height: 1.25em
+    font-size: 13px;
+    line-height: 1.25em;
+    color: #fff;
   }
 }
 `

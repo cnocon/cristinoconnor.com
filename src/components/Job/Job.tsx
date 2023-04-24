@@ -37,7 +37,7 @@ export const Job = ({
 
   return (
     <StyledJob className="job">
-      <JobYear><b>{year}</b></JobYear>
+
       <header>
         <h3 key={`job-${company}`}>{title}</h3>
         <h4><a href={companyUrl} target="_blank" rel="nofollow noreferrer">{company}</a> <HiOutlineChevronDoubleRight /> <Location>{location}</Location></h4>
