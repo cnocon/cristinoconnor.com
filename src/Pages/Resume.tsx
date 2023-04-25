@@ -17,16 +17,15 @@ export const Resume = () => {
     }
   }, [loaderData])
 
-
   return (
     <Layout>
       <div className="row">
-        <div className="col col-6">
+        <div className="col col-lg-6">
           {data && data?.resume && data.resume?.workHistory?.map((job: JobType) => {
             return <Job key={`${job.company}-job`} {...job} />
           })}
         </div>
-        <div className="col col-6">
+        <div className="col col-lg-6">
           <div className="card mb-4">
             <div className="card-body">
               {data && data?.resume && data.resume?.technicalSkills?.map((skill: SkillType) => {

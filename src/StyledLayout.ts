@@ -13,17 +13,26 @@ export const StyledLayout = styled.div`
   }
 
   .navbar-brand {
+    padding: 0;
+    margin: 0;
+    display: flex;
     font-size: 30px;
     font-family: Pacifico, serif;
     font-weight: 800;
-    color: transparent;
-    position: relative;
-    z-index: 10;
-    // color: hsl(261, 51%, 51%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-image: radial-gradient(ellipse at bottom right,#b698f5 30%,#66d4ff 40%,#5df8eb 50%,#ffec99 60%,#f28c8c 75%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  .rounded-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 `
