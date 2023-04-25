@@ -8,7 +8,7 @@ import { StyledLayout } from "./StyledLayout";
         <header className="wrapper-inner">
           <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand text-dark" href="/">Cristin O'Connor</a>
+            <a className="navbar-brand text-dark" href="/"><img src="https://vue.cristin.io/img/square-portrait.d29137a7.png" alt="Cristin O'Connor illustration"/>Cristin O'Connor</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
