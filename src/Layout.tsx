@@ -9,13 +9,19 @@ import { StyledLayout } from "./StyledLayout";
         <header className="wrapper-inner">
           <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <div className="border rounded rounded-circle">
+            <div className="rounded rounded-circle">
               <a className="navbar-brand text-dark" href="/">
-                <img src="https://vue.cristin.io/img/square-portrait.d29137a7.png" alt="Cristin O'Connor illustration"/>
+                <img src="https://vue.cristin.io/img/square-portrait.d29137a7.png" alt="Cristin O'Connor illustration" className="border rounded-circle" />
                 Cristin O'Connor
               </a>
             </div>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
