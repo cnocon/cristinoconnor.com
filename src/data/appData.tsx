@@ -35,47 +35,55 @@ const data = {
             detail: "International Sociology Honor Society",
           },
         ]
-      }
+      },
+      {
+        title: "Dev Bootcamp (Chicago)",
+        school: "Dev Bootcamp",
+        schoolUrl: null,
+        location: "Chicago, IL",
+        start: "01/01/2014",
+        end: "04/01/2014",
+      },
     ],
     technicalSkills: [
       {
         label: "JavaScript",
-        percentage: 90,
+        percentage: 80,
         icon: IoLogoJavascript
       },
       {
         label: "SCSS, LESS, CSS",
-        percentage: 90,
+        percentage: 75,
         icon: IoLogoCss3
       },
       {
         label: "Responsive Web Development",
-        percentage: 80,
+        percentage: 70,
         icon: MdMobileFriendly
       },
       {
         label: "Git",
-        percentage: 80,
+        percentage: 70,
         icon: BsGit
       },
       {
         label: "React",
-        percentage: 75,
+        percentage: 70,
         icon: FaReact
       },
       {
         label: "a11y",
-        percentage: 70,
+        percentage: 65,
         icon: BsFillPersonCheckFill
       },
       {
         label: "TypeScript",
-        percentage: 65,
+        percentage: 50,
         icon: SiTypescript
       },
       {
         label: "Ruby",
-        percentage: 50,
+        percentage: 40,
         icon: DiRuby
       },
       {

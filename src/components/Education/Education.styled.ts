@@ -21,7 +21,7 @@ export const School = styled.h4`
   padding-bottom: 0;
   margin-bottom: 0;
 
-  a {
+  a, span {
     font-weight: 500;
     text-transform: uppercase;
     font-family: Oswald, Impact, sans-serif;

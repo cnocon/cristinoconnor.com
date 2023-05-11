@@ -10,15 +10,19 @@ export const Education = ({ school, title, schoolUrl, location, honors, start, e
   const startDate = dayjs(start).format("MMM YYYY")
   const endDate = end === "Present" ? "Present" : dayjs(end).format("MMM YYYY")
   return (
-    <div>
+    <div className="card no-border">
+      <div className="card-body">
       <School>
-        <a
-          href={schoolUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {school}
-        </a>
+        {schoolUrl !== null ? (
+            <a
+              href={schoolUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {school}
+            </a>
+          ) : <span>{school}</span>
+        }
       </School>
       <StyledTitle>{title}</StyledTitle>
       <TimeRange>
@@ -38,5 +42,5 @@ export const Education = ({ school, title, schoolUrl, location, honors, start, e
           </Honor>
         ))}
       </Honors>
-  </div>
+  </div></div>
 )}

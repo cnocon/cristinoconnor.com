@@ -37,7 +37,7 @@ export type Data = {
 export type EducationType = {
   school: string,
   title: string,
-  schoolUrl: string,
+  schoolUrl: string | null,
   location: string,
   honors: HonorType[],
   start: string,

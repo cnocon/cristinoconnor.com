@@ -8,7 +8,7 @@ export const JobTitle = styled.h3`
   margin-bottom: 0;
 `
 export const Job = styled.article`
-  margin: 2rem 0 3rem;
+  margin: 2rem 0;
   position: relative;
 
   &:first-child {
@@ -105,7 +105,6 @@ export const Honor = styled.li`
   }
 
   b {
-    color: #ffc107;
     font-style: normal;
     text-transform: uppercase;
   }

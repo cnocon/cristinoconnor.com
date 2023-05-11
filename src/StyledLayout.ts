@@ -18,9 +18,8 @@ export const StyledBrand: any = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
+    font-size: 50px;
     font-family: Pacifico, serif;
-    font-weight: 800;
     width: 120px;
     border-radius: 50%;
 

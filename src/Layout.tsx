@@ -71,10 +71,10 @@ const Layout = ({ children }: { children: any }) => {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav" style={{display: "flex", justifyContent: "space-around"}}>
                   <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 rounded fw-bolder text-uppercase bg-secondary text-dark" aria-current="page" href="/">Home</a>
+                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link fs-6 p-1 rounded fw-bolder text-uppercase bg-secondary text-dark" href="/resume">Resume</a>
+                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/resume">Resume</a>
                   </li>
                 </ul>
               </div>
