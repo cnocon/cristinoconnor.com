@@ -44,7 +44,7 @@ const Brand = (props: any) => {
           Cristin O'Connor
         </StyledBrand>
       </div>
-      <p className="badge bg-secondary text-dark">{props?.hovering ? ` welcome!` : ``}</p>
+      <p className="badge bg-dark text-light">{props?.hovering ? ` Welcome!` : ``}</p>
     </StyledBrandContainer>
   )
 }

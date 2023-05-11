@@ -6,12 +6,55 @@ import { SiTypescript } from "react-icons/si"
 import { DiRuby } from "react-icons/di"
 import { BiTestTube } from "react-icons/bi"
 import { ReactNode } from "react"
+import { TbFishHook } from "react-icons/tb"
+import themeStyles from "../constants"
 export type Skill = {
   label: string,
   percentage: string,
   icon: ReactNode
 }
 const data = {
+  courses: [
+    {
+      title: "Advanced JavaScript",
+      url: "https://ui.dev/advanced-javascript",
+      platform: "ui.dev",
+      Icon: IoLogoJavascript,
+      instructor: null,
+      completedDate: "03/10/2023",
+      certificateUrl: "/advanced-javascript-certificate.pdf",
+      description: "Occaecat ea minim excepteur commodo exercitation laboris velit do. Culpa nisi elit eu labore aliqua ex anim.",
+      imageUrl: "https://ui.dev/images/advanced-javascript-logo.svg",
+      color: themeStyles.colors.primary,
+      backgroundColor: themeStyles.colors.secondary
+    },
+    {
+      title: "React Hooks",
+      url: "https://ui.dev/react-hooks",
+      platform: "ui.dev",
+      Icon: TbFishHook,
+      instructor: null,
+      completedDate: "In Progress",
+      certificateUrl: null,
+      description: "Anim ipsum excepteur adipisicing aliquip nulla pariatur exercitation aute consequat commodo officia veniam aliquip culpa. Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
+      imageUrl: "https://ui.dev/images/hook.svg",
+      color: themeStyles.colors.secondary,
+      backgroundColor: themeStyles.colors.primary
+    },
+    {
+      title: "Redux",
+      url: "https://ui.dev/c/redux/introduction-philosophy-and-tips",
+      platform: "ui.dev",
+      Icon: FaReact,
+      instructor: null,
+      completedDate: "02/18/2023",
+      certificateUrl: "/redux-certificate.pdf",
+      description: "Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
+      imageUrl: "https://ui.dev/images/redux-logo.svg",
+      color: themeStyles.colors.primary,
+      backgroundColor: themeStyles.colors.secondary
+    }
+  ],
   resume: {
     education: [
       {
@@ -92,7 +135,7 @@ const data = {
         icon: BiTestTube
       }
     ],
-    softSkills: ["Empathy to be an effective teammate", "Organizational abilities for managing projects independently", "Research skills to find the best solutions", "Enthusiasm and passion for front end work", "Positive attitude and willingness to handle a wide variety of responsibilities", "Effective communicator with people from varying technical backgrounds", "Dedicated to ongoing professional development", "5+ years of Agile experience", "12+ years of experience working on web applications in various capacities"],
+    softSkills: [ "Empathy to be an effective teammate", "Organizational abilities for managing projects independently", "Research skills to find the best solutions", "Enthusiasm and passion for front end work", "Positive attitude and willingness to handle a wide variety of responsibilities", "Effective communicator with people from varying technical backgrounds", "Dedicated to ongoing professional development", "5+ years of Agile experience", "12+ years of experience working on web applications in various capacities" ],
     workHistory: [ {
       year: "2022-23",
       title: "Software Engineer",
@@ -149,7 +192,7 @@ const data = {
       start: "Apr 2018",
       end: "Jun 2019",
       companyUrl: "https://www.thesciongroup.com/",
-      description: ["Increased average page load speed by a factor of four", "Updated in-house business intelligence software to use StimulusJS, DataTables, Highcharts, Rails 5, and data from multiple third party APIs including ADP, Entrata, Centro, and Chatmeter", "Redesigned UI/UX for a more modern, clean look and feel", "Aggregated over a dozen third party data sources into a data warehouse via an ETL application"],
+      description: [ "Increased average page load speed by a factor of four", "Updated in-house business intelligence software to use StimulusJS, DataTables, Highcharts, Rails 5, and data from multiple third party APIs including ADP, Entrata, Centro, and Chatmeter", "Redesigned UI/UX for a more modern, clean look and feel", "Aggregated over a dozen third party data sources into a data warehouse via an ETL application" ],
       technologies: [ "Ruby", "Rails", "JavaScript", "SQL" ],
       honors: []
     }
