@@ -1,22 +1,18 @@
 import styled from "styled-components"
 
-export const StyledLayout = styled.div`
-  .container-fluid {
-    width: 100%;
-    flex-wrap: wrap;
-  }
+export const StyledBrandContainer: any = styled.div`
+  text-align: center;
+  position: relative;
+  cursor: pointer;
 
-  .wrapper-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+  p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  .content {
-    padding: 1.5rem;
-  }
-
-  .navbar-brand {
+`
+export const StyledBrand: any = styled.div`
     padding: 0;
     margin: 1rem 0 0;
     display: flex;
@@ -32,6 +28,23 @@ export const StyledLayout = styled.div`
       max-width: 100%;
       display: block;
     }
+`
+export const StyledLayout = styled.div`
+  .container-fluid {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .content {
+    padding: 1.5rem;
   }
 
   .rounded-circle {

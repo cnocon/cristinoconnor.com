@@ -24,7 +24,6 @@ const ProgressBar = styled.div`
   letter-spacing: 1px;
   height: 6px;
   width: 100%;
-  background-image: linear-gradient(-240deg,#bca2f6,#cdb9f8 5%,#b3e9ff 17%,#b3e9ff 25%,#bffcf7 35%,#ffe366 60%,#fad1d1 85%);
 `
 
 const Progress = styled.div`
@@ -58,7 +57,7 @@ export const Skill = (props: SkillType) => {
         aria-label={label}
       >
         <ProgressBar
-          className="progress-bar"
+          className="progress-bar bg-secondary"
           style={{width: `${percentage}%`}}
         />
     </Progress>
