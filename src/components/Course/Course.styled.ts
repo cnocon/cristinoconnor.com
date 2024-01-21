@@ -1,6 +1,17 @@
 import styled from "styled-components"
-import { CourseIconWrapperPropsType, CourseIconWrapper } from "./Course"
+// import { CourseIconWrapperPropsType, CourseIconWrapper } from "./Course"
 
+export const CoursesList = styled.ul`
+  display: flex;
+  flex-wrap: nowrap;
+
+  li {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+`
 export const CourseTitle = styled.h4`
   display: flex;
   flex-wrap: wrap;

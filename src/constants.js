@@ -16,7 +16,7 @@ const themeStyles = {
     black: COLOR_BLACK,
   },
   gradients: {
-    linearRainbowGradient: LINEAR_RAINBOW_GRADIENT
+    primary: LINEAR_RAINBOW_GRADIENT
   }
 };
 export default themeStyles;

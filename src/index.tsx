@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Resume } from "./Pages/Resume"
 import { Home } from "./Pages/Home"
+import { WritingSample } from './Pages/WritingSample';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,17 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: "/writing-sample",
+    element: <WritingSample />,
+  },
+  {
     path: "resume",
     element: <Resume />,
+    loader: () => data
+  },
+  {
+    path: "writing-sample",
+    element: <WritingSample />,
     loader: () => data
   },
 ]);

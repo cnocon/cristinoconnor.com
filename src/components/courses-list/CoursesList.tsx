@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./CoursesList.styled";
-import { Course } from "../Course/Course";
+import { Course } from "../course/Course";
+import Layout from "../../Layout"
 
 export type CoursePropsType = {
   title: string,
@@ -25,6 +26,7 @@ export const CoursesList: React.FC<CoursesListType> = (
 ): (JSX.Element | null) => {
   if (!courses) return null;
   return (
+    <Layout>
     <div className="card no-border mt-4">
       {courses.map((course: CoursePropsType) => {
         return (
@@ -34,5 +36,6 @@ export const CoursesList: React.FC<CoursesListType> = (
         )
       })}
     </div>
+    </Layout>
   )
 }
