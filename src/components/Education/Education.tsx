@@ -1,5 +1,5 @@
 import React from "react";
-import { Honor, Honors } from "../job/Job.styled"
+import { Honor, Honors } from "../Job/Job.styled";
 import { EducationType, HonorType } from "../../data/types"
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { FaAward } from "react-icons/fa"

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
 
 // Higher order component example for passing shared functionality to children that need it
@@ -8,7 +8,6 @@ function withHover(Component: any) {
     const [hovering, setHovering] = React.useState(false);
 
     const mouseOver = () => {
-      console.log('mouseover');
       return setHovering(true);
     }
     const mouseOut = () => setHovering(false);
@@ -70,11 +69,14 @@ const Layout = ({ children }: { children: any }) => {
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav" style={{display: "flex", justifyContent: "space-around"}}>
-                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
+                  {/* <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
                     <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/">Home</a>
-                  </li>
-                  <li className="nav-item">
+                  </li> */}
+                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
                     <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/resume">Resume</a>
+                  </li>
+                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
+                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/writing-sample">Writing Sample</a>
                   </li>
                 </ul>
               </div>
@@ -87,7 +89,7 @@ const Layout = ({ children }: { children: any }) => {
           {children ? children : null}
         </div>
       </div>
-      <div className="footer wrapper-outer">
+      <div className="footer wrapper-outer" style={{textAlign: "center"}}>
         <footer className="wrapper-inner">
           <p>&copy;2023 Cristin O'Connor</p>
         </footer>

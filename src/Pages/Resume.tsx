@@ -1,14 +1,14 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom"
 import { Job as JobType } from "../data/types"
-import { Job } from "../components/job/Job";
+import { Job } from "../components/Job/Job";
 import Layout from "../components/layouts/Layout"
 import { Skill as SkillType } from "../data/types";
-import { Skill } from "../components/skill/Skill";
-import { Education } from "../components/education/Education"
+import { Skill } from "../components/Skill/Skill";
+import { Education } from "../components/Education/Education"
 import { EducationType } from "../data/types";
 import { ResumeSectionTitle } from "./Resume.styled"
-import { CoursesList } from "../components/courses-list/CoursesList";
+import { CoursesList } from "../components/CoursesList/CoursesList";
 export const Resume = () => {
   const loaderData: any = useLoaderData();
   const [data, setData] = React.useState(loaderData);

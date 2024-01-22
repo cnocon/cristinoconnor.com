@@ -1,6 +1,5 @@
 import React from "react";
-import * as S from "./CoursesList.styled";
-import { Course } from "../course/Course";
+import { Course } from "../Course/Course";
 import Layout from "../layouts/Layout"
 
 export type CoursePropsType = {

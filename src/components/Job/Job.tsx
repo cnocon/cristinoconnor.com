@@ -1,6 +1,6 @@
 import React from "react";
 import dayjs from "dayjs";
-import {Company, Honor, Honors, Description, Descriptions, Timespan, Technologies, Technology, Job as StyledJob, /*JobYear,*/ Location, JobTitle } from "./Job.styled";
+import {Company, Honor, Honors, Description, Descriptions, Timespan, Technologies, Technology, StyledJob, Location, JobTitle } from "./Job.styled";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 // import { BsTrophy } from "react-icons/bs";
 import { FaAward } from "react-icons/fa";

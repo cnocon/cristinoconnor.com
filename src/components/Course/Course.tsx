@@ -1,8 +1,8 @@
 import React from "react";
 import { HiOutlineChevronDoubleRight } from "react-icons/hi";
 import { MdOutlineSchool } from "react-icons/md";
-import { CoursePropsType } from "../courses-list/CoursesList";
-import * as S from "../course/Course.styled";
+import { CoursePropsType } from "../CoursesList/CoursesList";
+import * as S from "./Course.styled";
 import { IconType } from "react-icons";
 import themeStyles from "../../constants"
 

@@ -1,5 +1,5 @@
 import React from "react";
-import PullQuote from "../components/pull-quote/PullQuote";
+import PullQuote from "../components/PullQuote/PullQuote";
 import ArticleLayout from "../components/layouts/ArticleLayout";
 
 export const WritingSample = () => {
