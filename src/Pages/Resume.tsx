@@ -2,7 +2,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom"
 import { Job as JobType } from "../data/types"
 import { Job } from "../components/job/Job";
-import Layout from "../Layout"
+import Layout from "../components/layouts/Layout"
 import { Skill as SkillType } from "../data/types";
 import { Skill } from "../components/skill/Skill";
 import { Education } from "../components/education/Education"

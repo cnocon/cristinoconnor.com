@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./CoursesList.styled";
 import { Course } from "../course/Course";
-import Layout from "../../Layout"
+import Layout from "../layouts/Layout"
 
 export type CoursePropsType = {
   title: string,

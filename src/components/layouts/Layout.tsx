@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyledLayout, StyledBrand, StyledBrandContainer } from "./StyledLayout";
+import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
 
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
