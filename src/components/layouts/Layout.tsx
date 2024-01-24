@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
 import Heading from '../pages/Heading';
+import { NavLink } from 'react-router-dom';
 
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -69,17 +70,30 @@ const Layout = ({ children }: { children: any }) => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav" style={{display: "flex", justifyContent: "space-around"}}>
-                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/" >Home</a>
-                  </li>
-                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/resume">Resume</a>
-                  </li>
-                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/writing-sample" style={{whiteSpace: "nowrap"}}>Writing Sample</a>
-                  </li>
-                </ul>
+                <nav
+                  className="navbar-nav"
+                  style={{display: "flex", justifyContent: "space-around"}}
+                >
+                  <NavLink
+                    to="/"
+                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
+                  >
+                    Home
+                  </NavLink>
+
+                  <NavLink
+                    to="/writing-sample"
+                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
+                  >
+                    Writing Sample
+                  </NavLink>
+                  <NavLink
+                    to="/resume"
+                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
+                  >
+                    Résumé
+                  </NavLink>
+                </nav>
               </div>
             </div>
           </nav>

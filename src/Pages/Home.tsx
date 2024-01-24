@@ -26,19 +26,21 @@ export const Home = () => {
   }
   return (
     <Layout>
-    <h2 style={{textAlign: "center", paddingLeft: 0, textTransform: "uppercase", fontWeight: 800, fontFamily: "Lato, sans-serif" }}>About Me</h2>
+    <h2 style={{textAlign: "center", paddingLeft: 0, textTransform: "uppercase", fontWeight: 800, fontFamily: "Lato, sans-serif" }}>
+      About Me
+    </h2>
     <StyledContainer>
-    <Link to="/resume" style={linkStyle}>Resume</Link>
-    <Link to="/writing-sample" style={linkStyle}>Writing Sample</Link>
+      <Link to="/resume" style={linkStyle}>Resume</Link>
+      <Link to="/writing-sample" style={linkStyle}>Writing Sample</Link>
     </StyledContainer>
 
-    <h2 style={{textAlign: "center", paddingLeft: 0, textTransform: "uppercase", fontWeight: 800, fontFamily: "Lato, sans-serif" }}>Contact Me</h2>
+    <h2 style={{textAlign: "center", paddingLeft: 0, textTransform: "uppercase", fontWeight: 800, fontFamily: "Lato, sans-serif" }}>
+      Contact Me
+    </h2>
     <StyledContainer>
-
-    <Link to="https://github.com/cnocon" rel="noopener noreferrer" target="_blank" style={linkStyle}>GitHub</Link>
-    <Link to="https://codepen.io/cnocon" rel="noopener noreferrer" target="_blank" style={linkStyle}>Codepen</Link>
-    <Link to="https://www.linkedin.com/in/cristinoconnor/" rel="noopener noreferrer" target="_blank" style={linkStyle}>LinkedIn</Link>
-
+      <Link to="https://github.com/cnocon" rel="noopener noreferrer" target="_blank" style={linkStyle}>GitHub</Link>
+      <Link to="https://codepen.io/cnocon" rel="noopener noreferrer" target="_blank" style={linkStyle}>Codepen</Link>
+      <Link to="https://www.linkedin.com/in/cristinoconnor/" rel="noopener noreferrer" target="_blank" style={linkStyle}>LinkedIn</Link>
     </StyledContainer>
     </Layout>
     )

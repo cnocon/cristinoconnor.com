@@ -54,6 +54,8 @@ export const StyledLayout = styled.div`
   }
   .navbar-collapse {
     flex-basis: 100%;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
   }
   .navbar-collapse ul {

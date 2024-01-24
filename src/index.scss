@@ -48,6 +48,18 @@ body {
   margin: 0;
   font-family: "Lato", Verdana, sans-serif;
 }
+
+.nav-link {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.nav-link[aria-current="page"] {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  border-width: 2px;
+}
 /*
   6. Improve media defaults
 */

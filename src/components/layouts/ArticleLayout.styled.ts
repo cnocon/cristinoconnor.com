@@ -31,10 +31,7 @@ export const ArticleLayout = styled.section`
 
   header p {
     margin: 0 auto;
-  }
-
-  header p > *:not(strong) {
-    font-weight: 300;
+    font-family: "Lato", Verdana, sans-serif;
   }
 
   p {
