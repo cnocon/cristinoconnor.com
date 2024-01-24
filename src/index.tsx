@@ -16,21 +16,18 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    loader: () => data
   },
   {
     path: "/writing-sample",
     element: <WritingSample />,
+    loader: () => data
   },
   {
-    path: "resume",
+    path: "/resume",
     element: <Resume />,
     loader: () => data
-  },
-  {
-    path: "writing-sample",
-    element: <WritingSample />,
-    loader: () => data
-  },
+  }
 ]);
 
 const root = ReactDOM.createRoot(

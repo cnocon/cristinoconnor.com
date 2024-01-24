@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
+import Heading from '../pages/Heading';
 
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -69,14 +70,14 @@ const Layout = ({ children }: { children: any }) => {
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav" style={{display: "flex", justifyContent: "space-around"}}>
-                  {/* <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/">Home</a>
-                  </li> */}
+                  <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
+                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/" >Home</a>
+                  </li>
                   <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
                     <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" href="/resume">Resume</a>
                   </li>
                   <li className="nav-item" style={{display: "inline-block", marginRight: '1rem'}}>
-                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/writing-sample">Writing Sample</a>
+                    <a className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark" aria-current="page" href="/writing-sample" style={{whiteSpace: "nowrap"}}>Writing Sample</a>
                   </li>
                 </ul>
               </div>
@@ -91,7 +92,7 @@ const Layout = ({ children }: { children: any }) => {
       </div>
       <div className="footer wrapper-outer" style={{textAlign: "center"}}>
         <footer className="wrapper-inner">
-          <p>&copy;2023 Cristin O'Connor</p>
+          <p>&copy;2024 Cristin O'Connor</p>
         </footer>
       </div>
     </StyledLayout>
