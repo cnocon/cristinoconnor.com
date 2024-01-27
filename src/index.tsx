@@ -9,24 +9,31 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Resume } from "./Pages/Resume"
-import { Home } from "./Pages/Home"
+// import { Home } from "./Pages/Home"
 import { WritingSample } from './Pages/WritingSample';
+import NotFound from './Pages/NotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Resume />,
     loader: () => data
   },
+  // {
+  //   path: "/welcome",
+  //   element: <Home />,
+  //   loader: () => data
+  // },
   {
     path: "/writing-sample",
     element: <WritingSample />,
     loader: () => data
   },
   {
-    path: "/resume",
-    element: <Resume />,
+    path: "*",
+    element: <NotFound />,
     loader: () => data
+
   }
 ]);
 

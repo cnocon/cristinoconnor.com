@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
-import Heading from '../pages/Heading';
 import { NavLink } from 'react-router-dom';
 
 // Higher order component example for passing shared functionality to children that need it
@@ -45,7 +44,7 @@ const Brand = (props: any) => {
           Cristin O'Connor
         </StyledBrand>
       </div>
-      <p className="badge bg-dark text-light">{props?.hovering ? ` Welcome!` : ``}</p>
+      <p className="badge bg-dark text-light">Hello!</p>
     </StyledBrandContainer>
   )
 }
@@ -74,24 +73,23 @@ const Layout = ({ children }: { children: any }) => {
                   className="navbar-nav"
                   style={{display: "flex", justifyContent: "space-around"}}
                 >
+                  {/* <NavLink
+                    to="/welcome"
+                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
+                  >
+                    Home
+                  </NavLink> */}
                   <NavLink
                     to="/"
                     className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
                   >
-                    Home
+                    Résumé
                   </NavLink>
-
                   <NavLink
                     to="/writing-sample"
                     className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
                   >
                     Writing Sample
-                  </NavLink>
-                  <NavLink
-                    to="/resume"
-                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
-                  >
-                    Résumé
                   </NavLink>
                 </nav>
               </div>
@@ -101,7 +99,7 @@ const Layout = ({ children }: { children: any }) => {
       </div>
       <div className="content wrapper-outer">
         <div className="wrapper-inner">
-          {children ? children : null}
+          {children}
         </div>
       </div>
       <div className="footer wrapper-outer" style={{textAlign: "center"}}>
