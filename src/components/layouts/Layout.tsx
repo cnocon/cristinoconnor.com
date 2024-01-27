@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
 import { NavLink } from 'react-router-dom';
 
@@ -102,11 +103,7 @@ const Layout = ({ children }: { children: any }) => {
           {children}
         </div>
       </div>
-      <div className="footer wrapper-outer" style={{textAlign: "center"}}>
-        <footer className="wrapper-inner">
-          <p>&copy;2024 Cristin O'Connor</p>
-        </footer>
-      </div>
+      <Footer />
     </StyledLayout>
   );
 }
