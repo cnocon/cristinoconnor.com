@@ -25,7 +25,7 @@ export const CoursesList: React.FC<CoursesListType> = (
 ): (JSX.Element | null) => {
   if (!courses) return null;
   return (
-    <Layout>
+
     <div className="card no-border mt-4">
       {courses.map((course: CoursePropsType) => {
         return (
@@ -35,6 +35,5 @@ export const CoursesList: React.FC<CoursesListType> = (
         )
       })}
     </div>
-    </Layout>
   )
 }

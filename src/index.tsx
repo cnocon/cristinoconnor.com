@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     element: <Resume />,
     loader: () => data
   },
-  // {
-  //   path: "/welcome",
-  //   element: <Home />,
-  //   loader: () => data
-  // },
+  {
+    path: "/resume",
+    element: <Resume />,
+    loader: () => data
+  },
   {
     path: "/writing-sample",
     element: <WritingSample />,

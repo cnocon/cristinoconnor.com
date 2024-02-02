@@ -1,8 +1,8 @@
-import React from 'react';
-import Footer from '../Footer';
-import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../StyledLayout";
+import React, { useState } from 'react';
+import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../layouts/StyledLayout";
 import { NavLink } from 'react-router-dom';
-
+import Footer from '../Footer';
+import { Nav } from '../Nav/Nav.styles'
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function withHover(Component: any) {
@@ -36,7 +36,7 @@ const Hover = ({ render }: { render: any }) => {
   );
 }
 
-const Brand = (props: any) => {
+const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
   return (
     <StyledBrandContainer>
       <div className="rounded rounded-circle">
@@ -45,68 +45,62 @@ const Brand = (props: any) => {
           Cristin O'Connor
         </StyledBrand>
       </div>
-      <p className="badge bg-dark text-light">Hello!</p>
+      {hovering && <p className="badge bg-dark text-light">Hello!</p>}
     </StyledBrandContainer>
   )
 }
 
 const Layout = ({ children }: { children: any }) => {
+  const [hovering, setHovering] = useState(false);
   return (
-    <StyledLayout>
-      <div className="header wrapper-outer">
-        <header className="wrapper-inner">
-          <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
-              <Hover render={
-                (hovering: boolean) => <Brand hovering={hovering} />
-              } />
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <nav
-                  className="navbar-nav"
-                  style={{display: "flex", justifyContent: "space-around"}}
+    <>
+      <StyledLayout>
+        <div className="header wrapper-outer">
+          <header className="wrapper-inner">
+            <nav className="navbar navbar-expand-lg">
+              <div className="container-fluid">
+                <Hover render={
+                  (hovering: boolean) => <Brand hovering={hovering} />
+                } />
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                  {/* <NavLink
-                    to="/welcome"
-                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
-                  >
-                    Home
-                  </NavLink> */}
-                  <NavLink
-                    to="/"
-                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
-                  >
-                    Résumé
-                  </NavLink>
-                  <NavLink
-                    to="/writing-sample"
-                    className="nav-link fs-6 p-1 fw-bolder text-uppercase btn btn-secondary text-dark mx-2"
-                  >
-                    Writing Sample
-                  </NavLink>
-                </nav>
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                  <nav style={{marginBottom: "2rem"}}>
+                    <NavLink
+                      to="/"
+                      style={{marginRight: "1rem"}}
+                      className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
+                    >
+                      Résumé
+                    </NavLink>
+                    <NavLink
+                      to="/writing-sample"
+                      className={({ isActive }) => isActive ? "active btn btn-secondary" : "btn btn-secondary"}
+                    >
+                      Writing Sample
+                    </NavLink>
+                  </nav>
+                </div>
               </div>
-            </div>
-          </nav>
-        </header>
-      </div>
-      <div className="content wrapper-outer">
-        <div className="wrapper-inner">
-          {children}
+            </nav>
+          </header>
         </div>
-      </div>
+        <div className="content wrapper-outer">
+          <div className="wrapper-inner">
+            {children}
+          </div>
+        </div>
+      </StyledLayout>
       <Footer />
-    </StyledLayout>
+    </>
   );
 }
 
-// export default withHover(Layout);
-export default Layout;
+export default withHover(Layout);

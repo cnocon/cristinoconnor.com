@@ -144,7 +144,7 @@ const data = {
       start: "08/01/2022",
       end: "Present",
       companyUrl: "https://citybase.com",
-      description: [ `Nurture and scale the front ends of several client facing applications related to making payments`, `Care for and grow a proprietary React component library, and integrate those components successfully into myriad contexts`, `Incrementally set up and convert JavaScript codebases to use TypeScript (front end and full stack)`, `Participate in design critiques (along with other engineers) to help facilitate cross-discipline knowledge transfer and early detection of potential gotchas in development` ],
+      description: [ `Maintain and scale the front ends of several client facing applications related to making payments`, `Care for and grow a proprietary React component library, and integrate those components successfully into myriad contexts`, `Incrementally set up and convert JavaScript codebases to use TypeScript (front end and full stack)`, `Participate in design critiques (along with other engineers) to help facilitate cross-discipline knowledge transfer and early detection of potential gotchas in development` ],
       technologies: [ "AdvancedJS", "React", "TypeScript", "Functional Programming", "a11y" ],
       honors: []
     },
