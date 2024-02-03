@@ -111,7 +111,7 @@ export const Course: React.FC<CoursePropsType> = (props) => {
   } = props;
 
   return (
-    <div className="card px-4 pt-2 mb-4 pb-3">
+    <div className="card px-4 pt-2 mb-4 pb-3" style={{textAlign: "center"}}>
       <CourseTitle
         title={title}
         url={url}
@@ -125,7 +125,6 @@ export const Course: React.FC<CoursePropsType> = (props) => {
         description={description}
         Icon={Icon}
       />
-
       {typeof instructor === 'string' && (<S.FooterDetail><b>Instructor</b>: {instructor}</S.FooterDetail>)}
       {typeof completedDate === 'string' && (<S.FooterDetail><b>Completed</b>: {completedDate}</S.FooterDetail>)}
       {typeof certificateUrl === 'string' && (<S.FooterDetail><b>Credential</b>: <a href={certificateUrl} target="_blank" rel="noopener noreferrer">Certificate of Completion</a></S.FooterDetail>)}

@@ -23,7 +23,7 @@ const data = {
       instructor: null,
       completedDate: "03/10/2023",
       certificateUrl: "/assets/advanced-javascript-certificate.pdf",
-      description: "Occaecat ea minim excepteur commodo exercitation laboris velit do. Culpa nisi elit eu labore aliqua ex anim.",
+      description: "",//"Occaecat ea minim excepteur commodo exercitation laboris velit do. Culpa nisi elit eu labore aliqua ex anim.",
       imageUrl: "https://ui.dev/images/advanced-javascript-logo.svg",
       color: themeStyles.colors.primary,
       backgroundColor: themeStyles.colors.secondary
@@ -36,7 +36,7 @@ const data = {
       instructor: null,
       completedDate: "In Progress",
       certificateUrl: null,
-      description: "Anim ipsum excepteur adipisicing aliquip nulla pariatur exercitation aute consequat commodo officia veniam aliquip culpa. Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
+      description: "",//"Anim ipsum excepteur adipisicing aliquip nulla pariatur exercitation aute consequat commodo officia veniam aliquip culpa. Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
       imageUrl: "https://ui.dev/images/hook.svg",
       color: themeStyles.colors.secondary,
       backgroundColor: themeStyles.colors.primary
@@ -49,7 +49,7 @@ const data = {
       instructor: null,
       completedDate: "02/18/2023",
       certificateUrl: "/assets/redux-certificate.pdf",
-      description: "Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
+      description: "",//Culpa nisi elit eu labore aliqua ex anim. Adipisicing qui ea esse velit anim in do commodo nulla elit id. Fugiat do do tempor reprehenderit.",
       imageUrl: "https://ui.dev/images/redux-logo.svg",
       color: themeStyles.colors.primary,
       backgroundColor: themeStyles.colors.secondary
@@ -116,24 +116,24 @@ const data = {
       },
       {
         label: "a11y",
-        percentage: 65,
+        percentage: 70,
         icon: BsFillPersonCheckFill
       },
       {
         label: "TypeScript",
-        percentage: 50,
+        percentage: 65,
         icon: SiTypescript
       },
-      {
-        label: "Ruby",
-        percentage: 40,
-        icon: DiRuby
-      },
-      {
-        label: "RTL & Jest",
-        percentage: 40,
-        icon: BiTestTube
-      }
+      // {
+      //   label: "Ruby",
+      //   percentage: 40,
+      //   icon: DiRuby
+      // },
+      // {
+      //   label: "RTL & Jest",
+      //   percentage: 40,
+      //   icon: BiTestTube
+      // }
     ],
     softSkills: [ "Empathy to be an effective teammate", "Organizational abilities for managing projects independently", "Research skills to find the best solutions", "Enthusiasm and passion for front end work", "Positive attitude and willingness to handle a wide variety of responsibilities", "Effective communicator with people from varying technical backgrounds", "Dedicated to ongoing professional development", "5+ years of Agile experience", "12+ years of experience working on web applications in various capacities" ],
     workHistory: [ {
