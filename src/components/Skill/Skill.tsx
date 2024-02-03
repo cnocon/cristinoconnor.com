@@ -49,8 +49,15 @@ const Percentage = styled.div`
 export const Skill = (props: SkillType) => {
   const { label, percentage, icon } = props;
   return (
-    <div className="px-4">
-      <Label className="text-dark">{icon({className: "text-dark"})} {label} <Percentage className="bg-dark text-light rounded">{percentage}%</Percentage></Label>
+    <div>
+      <Label className="text-dark">
+        {icon({className: "text-dark"})} {label}
+        <Percentage
+          className="bg-dark text-light rounded"
+        >
+          {percentage}%
+        </Percentage>
+      </Label>
       <Progress
         className="progress"
         role="progressbar"

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../layouts/StyledLayout";
 import { NavLink } from 'react-router-dom';
 import Footer from '../Footer';
-import { Nav } from '../Nav/Nav.styles'
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function withHover(Component: any) {
@@ -39,18 +38,16 @@ const Hover = ({ render }: { render: any }) => {
 const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
   return (
     <StyledBrandContainer>
-      <div className="rounded rounded-circle">
-        <StyledBrand className="navbar-brand text-dark" href="/">
-          <img src="https://vue.cristin.io/img/square-portrait.d29137a7.png" alt="Cristin O'Connor illustration" className="rounded-circle" />
-          Cristin O'Connor
-        </StyledBrand>
-      </div>
+      <StyledBrand className="navbar-brand" href="/">
+        <img src="/images/avatar-white.png" alt="Cristin O'Connor illustration" className="rounded rounded-circle" />
+        <h1>Cristin O'Connor</h1>
+      </StyledBrand>
       {hovering && <p className="badge bg-dark text-light">Hello!</p>}
     </StyledBrandContainer>
   )
 }
 
-const Layout = ({ children }: { children: any }) => {
+const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [hovering, setHovering] = useState(false);
   return (
     <>

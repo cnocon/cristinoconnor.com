@@ -106,3 +106,12 @@ code {
   padding: 2rem 0;
   margin-top: 3.5rem;
 }
+.rainbow-box-shadow {
+  box-shadow: 0 3px #47ebdd, -3px 0 #fff833, 3px 0 #7171ef, 0 -3px 0 #f1818a;
+  margin: 0 1.25rem 0 0;
+}
+.rainbow-text {
+  background-clip: text;
+  color: transparent;
+  background-image: radial-gradient(ellipse at bottom right,#b698f5 30%,#66d4ff 40%,#5df8eb 50%,#ffec99 60%,#f28c8c 75%);
+}
