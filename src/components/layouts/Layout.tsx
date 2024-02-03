@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
 import { StyledLayout, StyledBrand, StyledBrandContainer } from "../../layouts/StyledLayout";
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Footer';
+
+const CenterDiv = ({ children }: React.PropsWithChildren ) => (
+  <div className="container-fluid">
+    <div className="row">
+      <div className="col-12 text-center py-2">
+        {children}
+      </div>
+    </div>
+  </div>
+);
+
+const StyledCenterDiv = styled(CenterDiv)``
 // Higher order component example for passing shared functionality to children that need it
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function withHover(Component: any) {
@@ -42,20 +55,21 @@ const Brand: React.FC<{ hovering: boolean }> = ({ hovering }) => {
         <img src="/images/avatar-white.png" alt="Cristin O'Connor illustration" className="rounded rounded-circle" />
         <h1>Cristin O'Connor</h1>
       </StyledBrand>
-      {hovering && <p className="badge bg-dark text-light">Hello!</p>}
+      <p className="badge bg-dark text-light">{hovering && 'Hello!'}</p>
     </StyledBrandContainer>
   )
 }
 
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [hovering, setHovering] = useState(false);
+
   return (
     <>
       <StyledLayout>
         <div className="header wrapper-outer">
           <header className="wrapper-inner">
-            <nav className="navbar navbar-expand-lg">
-              <div className="container-fluid">
+            <nav className="navbar navbar-expand-md">
+              <StyledCenterDiv>
                 <Hover render={
                   (hovering: boolean) => <Brand hovering={hovering} />
                 } />
@@ -85,7 +99,7 @@ const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
                     </NavLink>
                   </nav>
                 </div>
-              </div>
+                </StyledCenterDiv>
             </nav>
           </header>
         </div>

@@ -14,7 +14,7 @@ export const StyledBrandContainer: any = styled.div`
 `
 export const StyledBrand: any = styled.div`
     padding: 0;
-    margin: 1rem 0 0;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@ export const StyledLayout = styled.div`
     align-items: center;
     justify-content: center;
   }
-  .navbar-collapse ul {
+  .navbar-collapse nav {
     display: flex;
     justify-content: center;
     align-items: center;
