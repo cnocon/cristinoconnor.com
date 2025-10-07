@@ -16,9 +16,8 @@ export const Resume = () => {
   React.useEffect(() => {
     if (loaderData) {
       setData(loaderData)
-      console.log(data.resume);
     }
-    
+
   }, [loaderData, data.resume])
 
   return (
